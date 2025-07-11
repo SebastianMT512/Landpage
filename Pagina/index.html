@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+         Quick Bleach By Dr. Souto New York - Clínica Dental Profesional
+      </title>
+
+      <!-- SEO Meta Tags -->
+      <meta
+         name="description"
+         content="Atención dental profesional del Dr. Souto. Servicios de calidad dental en Nueva York incluyendo blanqueamiento, implantes y cuidado oral." />
+      <meta
+         name="keywords"
+         content="dental care, Dr. Souto, New York dentist, oral health, dental services, oral hygiene, blanqueamiento dental" />
+      <meta name="author" content="Dr. Souto's Dental Office" />
+
+      <!-- Open Graph Meta Tags for Social Sharing -->
+      <meta
+         property="og:title"
+         content="Quick Bleach - Dr. Souto's Dental Office" />
+      <meta
+         property="og:description"
+         content="Atención dental profesional en un ambiente cómodo y acogedor." />
+      <meta property="og:image" content="Images/clinic1.jpg" />
+      <meta property="og:url" content="https://www.drsoutodental.com" />
+      <meta property="og:type" content="website" />
+
+      <!-- Structured Data -->
+      <script type="application/ld+json">
+         {
+            "@context": "https://schema.org",
+            "@type": "Dentist",
+            "name": "Dr. Souto's Quick Bleach Dental Office",
+            "description": "Servicios de calidad dental del Dr. Souto. Especializados en higiene oral, blanqueamiento dental y atención dental personalizada.",
+            "address": {
+               "@type": "PostalAddress",
+               "streetAddress": "120 East 56th St",
+               "addressLocality": "New York",
+               "addressRegion": "NY",
+               "postalCode": "10022"
+            },
+            "telephone": "(212) 308-5577",
+            "url": "https://www.drsoutodental.com",
+            "image": "https://www.drsoutodental.com/Images/clinic1.jpg",
+            "openingHoursSpecification": [
+               {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+               }
+            ]
+         }
+      </script>
+
+      <!-- Bootstrap CSS -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+         rel="stylesheet" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+         rel="stylesheet" />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+      <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+      <!-- Google Fonts -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap"
+         rel="stylesheet" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+         rel="stylesheet" />
+
+      <!-- Local CSS -->
+      <style>
+         /* CSS mejorado con medidas relativas y mejor accesibilidad */
+         body,
+         html {
+            background: linear-gradient(
+               to top,
+               #f5f5f5,
+               #dcdcdc,
+               #c7c7c7,
+               #a8a8a8
+            );
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            line-height: 1.6;
+         }
+
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            color: #212529;
+            margin-bottom: 1.25rem;
+            line-height: 1.3;
+         }
+
+         h1 {
+            font-size: 2.5rem;
+            color: #212529;
+         }
+
+         h2 {
+            font-size: 2rem;
+         }
+
+         h3 {
+            font-size: 1.5rem;
+         }
+
+         h4 {
+            font-size: 1.25rem;
+         }
+
+         p {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 1.125rem;
+            color: #333;
+            margin-bottom: 1rem;
+         }
+
+         /* Asegurar contraste adecuado */
+         .text-light-contrast {
+            color: #2c2c2c;
+            background-color: #f8f9fa;
+         }
+
+         /* Skip link para navegación con teclado */
+         .skip-link {
+            position: absolute;
+            top: -40px; /* Fuera de pantalla inicialmente */
+            left: 1rem;
+            background: #000;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            z-index: 2000;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: top 0.3s ease;
+         }
+
+         .skip-link:focus,
+         .skip-link:active {
+            top: 1rem; /* Aparece en pantalla al usar tabulador */
+            outline: 3px solid #007bff;
+            outline-offset: -3px;
+         }
+         /* Sections */
+         section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 0.625rem;
+            margin: 1.25rem auto;
+            box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 75rem;
+            scroll-margin-top: 5rem;
+         }
+
+         .section-content {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            max-width: 50rem;
+         }
+
+         /* Gradientes de fondo para secciones */
+         #home {
+            padding-top: 5rem;
+            background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+         }
+
+         #services {
+            background: linear-gradient(135deg, #e0e0e0, #d6d6d6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         #beforeAfter {
+            background: linear-gradient(135deg, #d6d6d6, #c7c7c7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         #staff {
+            background: linear-gradient(135deg, #c7c7c7, #b8b8b8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         #findus {
+            background: linear-gradient(135deg, #b8b8b8, #a8a8a8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         #insurances {
+            background: linear-gradient(135deg, #a8a8a8, #9b9b9b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+            gap: 0.625rem;
+         }
+
+         .service-item {
+            background: #fff;
+            padding: 1.25rem;
+            border-radius: 0.625rem;
+            box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+         }
+
+         .service-item:hover,
+         .service-item:focus-within {
+            box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.2);
+            transform: translateY(-0.3125rem);
+         }
+
+         /* Mejorar focus visible para navegación con teclado */
+         button:focus,
+         .btn:focus,
+         a:focus {
+            outline: 3px solid #007bff;
+            outline-offset: 2px;
+         }
+
+         button,
+         .btn-primary {
+            box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+         }
+
+         button:hover,
+         .btn-primary:hover {
+            box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2);
+            transform: translateY(-0.1875rem);
+         }
+
+         img {
+            box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            transition: box-shadow 0.3s ease;
+            max-width: 100%;
+            height: auto;
+         }
+
+         img:hover {
+            box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.2);
+         }
+
+         iframe {
+            width: 100%;
+            height: 31.25rem;
+            border: 0;
+            border-radius: 0.75rem;
+         }
+
+         .navbar .nav-link.active {
+            font-weight: bold;
+            color: #007bff !important;
+            text-decoration: underline;
+         }
+
+         .navbar-brand {
+            font-size: 1.5rem;
+         }
+
+         .back-to-top {
+            position: fixed;
+            bottom: 1.25rem;
+            right: 1.25rem;
+            display: none;
+            z-index: 1000;
+            padding: 0.75rem;
+            font-size: 1.25rem;
+         }
+
+         .navbar-hidden {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+         }
+
+         .navbar-visible {
+            transform: translateY(0);
+            transition: transform 0.3s ease-in-out;
+         }
+
+         .navbar-fixed-top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1030;
+         }
+
+         .staff-image-placeholder {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+         }
+
+         .staff-image-placeholder img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            display: block;
+         }
+
+         .contact-info {
+            margin-top: 1.875rem;
+            text-align: center;
+         }
+
+         .contact-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+         }
+
+         .contact-info p {
+            margin: 0;
+            font-size: 1.25rem;
+         }
+
+         .insurance-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.9375rem;
+            margin-top: 1.25rem;
+         }
+
+         .insurance-images img {
+            background-color: white;
+            max-height: 5.625rem;
+            width: auto;
+            max-width: 8.4375rem;
+            object-fit: contain;
+            padding: 0.5rem;
+         }
+
+         .navbar .nav-link {
+            transition: color 0.3s, text-shadow 0.3s;
+            padding: 0.5rem 1rem;
+         }
+
+         .navbar .nav-link:hover,
+         .navbar .nav-link:focus {
+            color: #007bff;
+            text-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+         }
+
+         .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+         }
+
+         footer {
+            background: #f5f5f5;
+            color: #333;
+            padding: 1.25rem;
+            text-align: center;
+         }
+
+         footer a {
+            color: #007bff;
+            text-decoration: none;
+         }
+
+         footer a:hover,
+         footer a:focus {
+            text-decoration: underline;
+            color: #0056b3;
+         }
+
+         .service-item:hover h3 {
+            color: #007bff;
+         }
+
+         .gallery-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scrollbar-width: none;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            max-width: 75rem;
+            margin: 0 auto;
+            box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+            border-radius: 0.625rem;
+         }
+
+         .gallery {
+            display: flex;
+            gap: 1.25rem;
+            animation: scroll-gallery 30s linear infinite;
+         }
+
+         .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.625rem;
+            box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            min-width: 12.5rem;
+         }
+
+         .secondary-phone {
+            display: block;
+            margin-left: 5.1875rem;
+         }
+
+         /* Keyframes para scroll horizontal */
+         @keyframes scroll-gallery {
+            0% {
+               transform: translateX(0);
+            }
+            100% {
+               transform: translateX(-400%);
+            }
+         }
+
+         .gallery::after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+         }
+
+         #beforeAfter h1,
+         #beforeAfter h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1.875rem;
+            text-align: center;
+         }
+
+         #beforeAfter img {
+            max-width: 45%;
+            height: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+         }
+
+         #beforeAfter img:hover,
+         #beforeAfter img:focus {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.2);
+         }
+
+         /* Status indicators para mejorar accesibilidad */
+         .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+         }
+
+         /* Responsive mejoras */
+         @media (max-width: 30rem) {
+            .navbar-brand {
+               font-size: 1.2rem;
+            }
+            .navbar {
+               padding: 0.5rem 1rem;
+            }
+            .navbar .nav-link {
+               font-size: 0.9rem;
+            }
+            h1 {
+               font-size: 2rem;
+            }
+            p {
+               font-size: 1rem;
+            }
+         }
+
+         @media (min-width: 30.0625rem) and (max-width: 47.9375rem) {
+            .navbar-brand {
+               font-size: 1.3rem;
+            }
+            .navbar {
+               padding: 0.75rem 1.5rem;
+            }
+            .navbar .nav-link {
+               font-size: 1rem;
+            }
+         }
+
+         @media (min-width: 48rem) and (max-width: 64rem) {
+            .navbar-brand {
+               font-size: 1.5rem;
+            }
+            .navbar {
+               padding: 1rem 2rem;
+            }
+            .navbar .nav-link {
+               font-size: 1.1rem;
+            }
+         }
+
+         @media (min-width: 64.0625rem) {
+            .navbar-brand {
+               font-size: 1.7rem;
+            }
+            .navbar {
+               padding: 1.2rem 3rem;
+            }
+            .navbar .nav-link {
+               font-size: 1.2rem;
+            }
+         }
+
+         @media (min-width: 120rem) {
+            .navbar-brand {
+               font-size: 2rem;
+            }
+            .navbar {
+               padding: 1.5rem 4rem;
+            }
+            .navbar .nav-link {
+               font-size: 1.3rem;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Skip to main content link -->
+      <a href="#main-content" class="skip-link"
+         >Saltar al contenido principal</a
+      >
+
+      <!-- Fixed Background -->
+      <div class="background" role="presentation"></div>
+
+      <!-- Navigation Bar -->
+      <nav
+         class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top navbar-visible"
+         role="navigation"
+         aria-label="Navegación principal">
+         <div class="container-fluid">
+            <a
+               class="navbar-brand"
+               href="#home"
+               style="font-family: 'Playfair Display', serif; font-size: 1.5rem"
+               aria-label="Quick Bleach - Ir al inicio">
+               Quick Bleach
+            </a>
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Alternar menú de navegación">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav" role="menubar">
+                  <li class="nav-item" role="none">
+                     <a class="nav-link" href="#home" role="menuitem">Inicio</a>
+                  </li>
+                  <li class="nav-item" role="none">
+                     <a class="nav-link" href="#services" role="menuitem"
+                        >Servicios Dentales</a
+                     >
+                  </li>
+                  <li class="nav-item" role="none">
+                     <a class="nav-link" href="#beforeAfter" role="menuitem"
+                        >Resultados de Tratamientos</a
+                     >
+                  </li>
+                  <li class="nav-item" role="none">
+                     <a class="nav-link" href="#staff" role="menuitem"
+                        >Nuestro Equipo</a
+                     >
+                  </li>
+                  <li class="nav-item" role="none">
+                     <a class="nav-link" href="#findus" role="menuitem"
+                        >Ubicación y Contacto</a
+                     >
+                  </li>
+                  <li class="nav-item" role="none">
+                     <a class="nav-link" href="#insurances" role="menuitem"
+                        >Seguros Aceptados</a
+                     >
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main id="main-content">
+         <header>
+            <h1>
+               Quick Bleach by Dr. Souto - Clínica Dental Profesional en Nueva
+               York
+            </h1>
+            <p class="sr-only">
+               Bienvenido a nuestra página web, donde ofrecemos servicios de
+               blanqueamiento dental, implantes y cuidado oral de alta calidad.
+            </p>
+         </header>
+
+         <!-- Home Section -->
+         <section id="home" data-aos="fade-up">
+            <div class="section-content">
+               <h1>
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                  Bienvenido a Quick Bleach - Clínica Dental Dr. Souto
+               </h1>
+               <p class="lead">
+                  Atención dental profesional para tu sonrisa perfecta.
+               </p>
+               <p>
+                  <i class="bi bi-person-check-fill" aria-hidden="true"></i>
+                  Priorizamos tu salud oral con tecnología de vanguardia y un
+                  enfoque centrado en el paciente.
+               </p>
+               <p>
+                  <i class="bi bi-building" aria-hidden="true"></i>
+                  Visítanos para una revisión rutinaria o un procedimiento
+                  complejo. Estás en manos expertas y cuidadosas.
+               </p>
+
+               <!-- Gallery -->
+               <div
+                  class="gallery-wrapper"
+                  role="region"
+                  aria-label="Galería de imágenes de la clínica">
+                  <div class="gallery" aria-live="polite">
+                     <img
+                        src="Images/clinic1.jpeg"
+                        alt="Área de recepción de la clínica con mostrador moderno y asientos cómodos" />
+                     <img
+                        src="Images/clinic2.jpeg"
+                        alt="Sala de espera con sillones ergonómicos y decoración relajante" />
+                     <img
+                        src="Images/clinic3.jpeg"
+                        alt="Sala de consulta equipada con tecnología dental avanzada" />
+                     <img
+                        src="Images/clinic4.jpeg"
+                        alt="Sillón dental principal con equipamiento especializado" />
+                     <img
+                        src="Images/clinic5.jpeg"
+                        alt="Segunda sala de tratamiento con instrumentos esterilizados" />
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Services Section -->
+         <section id="services" data-aos="fade-up">
+            <div class="section-content">
+               <h2>Qué Podemos Hacer por Ti</h2>
+               <div class="service-list">
+                  <div class="service-item">
+                     <i class="bi bi-shield-check fa-2x" aria-hidden="true"></i>
+                     <h3>Mantener</h3>
+                     <p>
+                        Queremos ser tu socio en salud dental. Visítanos para
+                        mantener tu boca en perfectas condiciones.
+                     </p>
+                  </div>
+                  <div class="service-item">
+                     <i class="bi bi-star-fill fa-2x" aria-hidden="true"></i>
+                     <h3>Mejorar</h3>
+                     <p>
+                        Una sonrisa radiante refleja belleza interior y
+                        confianza. Te ayudamos a lograr la sonrisa de tus
+                        sueños.
+                     </p>
+                  </div>
+                  <div class="service-item">
+                     <i class="bi bi-tools fa-2x" aria-hidden="true"></i>
+                     <h3>Restaurar</h3>
+                     <p>
+                        Implantes, endodoncias, prótesis y tratamientos
+                        personalizados darán a tu sonrisa una segunda
+                        oportunidad.
+                     </p>
+                  </div>
+                  <div class="service-item">
+                     <i
+                        class="bi bi-life-preserver fa-2x"
+                        aria-hidden="true"></i>
+                     <h3>Obtener Ayuda</h3>
+                     <p>
+                        ¿Tienes un problema dental que necesita atención
+                        inmediata? Cuenta con nosotros, ¡estamos aquí para
+                        ayudarte!
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Before and After Section -->
+         <section id="beforeAfter" data-aos="fade-up">
+            <div class="section-content">
+               <h2 class="text-center">Antes y Después de los Tratamientos</h2>
+               <div class="row gy-4">
+                  <!-- Treatment 1 -->
+                  <div class="col-md-6">
+                     <h3 class="text-center">
+                        Blanqueamiento Dental e Invisalign
+                     </h3>
+                     <div
+                        class="d-flex justify-content-center"
+                        role="group"
+                        aria-label="Comparación antes y después del blanqueamiento dental">
+                        <img
+                           src="Images/before1.jpg"
+                           alt="Dientes antes del tratamiento de blanqueamiento - tonos amarillentos visibles"
+                           class="img-fluid mx-2" />
+                        <img
+                           src="Images/after1.jpg"
+                           alt="Dientes después del blanqueamiento - sonrisa blanca y brillante"
+                           class="img-fluid mx-2" />
+                     </div>
+                  </div>
+                  <!-- Treatment 2 -->
+                  <div class="col-md-6">
+                     <h3 class="text-center">
+                        Implantes Dentales y Composites
+                     </h3>
+                     <div
+                        class="d-flex justify-content-center"
+                        role="group"
+                        aria-label="Comparación antes y después de implantes dentales">
+                        <img
+                           src="Images/before.JPG"
+                           alt="Sonrisa antes de implantes dentales - espacios vacíos evidentes"
+                           class="img-fluid mx-2" />
+                        <img
+                           src="Images/after.JPG"
+                           alt="Sonrisa después de implantes dentales - dentadura completa y natural"
+                           class="img-fluid mx-2" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Staff Section -->
+         <section id="staff" data-aos="fade-right">
+            <div class="section-content">
+               <h2>Conoce Nuestro Equipo</h2>
+               <div class="staff-image-placeholder">
+                  <img
+                     src="Images/staff.jpeg"
+                     alt="Equipo médico de la clínica Quick Bleach - profesionales sonrientes en batas blancas" />
+               </div>
+               <p>
+                  Nuestro personal altamente capacitado y experimentado está
+                  comprometido a brindar atención dental excepcional. Con
+                  certificaciones en las técnicas dentales más avanzadas y una
+                  pasión por la comodidad del paciente, aseguran que recibas el
+                  mejor tratamiento posible. Desde nuestras recepcionistas hasta
+                  nuestros higienistas dentales y especialistas, cada miembro
+                  del equipo trabaja en conjunto para hacer que tu visita sea
+                  fluida y agradable.
+               </p>
+            </div>
+         </section>
+
+         <!-- Find Us Section -->
+         <section id="findus" data-aos="zoom-in">
+            <div class="section-content">
+               <h2>Encuéntranos</h2>
+               <p>
+                  <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                  <a
+                     href="https://www.google.com/maps?q=120+East+56th+St,+New+York,+NY+10022"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     aria-label="Ver ubicación en Google Maps - 120 East 56th St, New York, NY, 10022">
+                     120 East 56th St, New York, NY, 10022
+                  </a>
+               </p>
+               <p><strong>Suite 730 - Piso 7</strong></p>
+               <div>
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1068.466508163846!2d-73.971026476144!3d40.760272776008236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e4d733efc3%3A0xa9ab5533f8e58790!2s120%20E%2056th%20St%2C%20New%20York%2C%20NY%2010022!5e0!3m2!1sen!2sus!4v1735001416329!5m2!1sen!2sus"
+                     allowfullscreen=""
+                     loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"
+                     title="Mapa de ubicación de Quick Bleach en 120 East 56th St, New York"
+                     aria-label="Mapa interactivo mostrando la ubicación de la clínica"></iframe>
+               </div>
+               <div class="contact-info">
+                  <h3>Contáctanos</h3>
+                  <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                  <p>
+                     Para <strong>programar una cita</strong>, por favor
+                     contáctanos <strong>por teléfono</strong>:
+                  </p>
+                  <p>
+                     <strong>Teléfono principal:</strong>
+                     <a
+                        href="tel:+12123085577"
+                        aria-label="Llamar al teléfono principal"
+                        >(212) 308-5577</a
+                     >
+                  </p>
+                  <p class="secondary-phone">
+                     <strong>Teléfono alternativo:</strong>
+                     <a
+                        href="tel:+12128891313"
+                        aria-label="Llamar al teléfono alternativo"
+                        >(212) 889-1313</a
+                     >
+                  </p>
+                  <h4>Horarios de Atención</h4>
+                  <i class="bi bi-clock" aria-hidden="true"></i>
+                  <p><strong>Lunes - Jueves:</strong> 9:00 AM - 6:00 PM</p>
+                  <p><strong>Viernes - Domingo: Cerrado</strong></p>
+               </div>
+            </div>
+         </section>
+
+         <!-- Insurances Section -->
+         <section id="insurances" data-aos="fade-up">
+            <div class="section-content">
+               <h2>Seguros que Aceptamos</h2>
+               <p>
+                  Aceptamos una amplia gama de seguros para cubrir tus
+                  necesidades.
+               </p>
+               <div
+                  class="insurance-images"
+                  role="list"
+                  aria-label="Lista de seguros médicos aceptados">
+                  <img
+                     src="Images/Aetna_Insurance.png"
+                     alt="Logo de seguro Aetna"
+                     role="listitem" />
+                  <img
+                     src="Images/anthem.png"
+                     alt="Logo de seguro Anthem"
+                     role="listitem" />
+                  <img
+                     src="Images/cigna.png"
+                     alt="Logo de seguro Cigna"
+                     role="listitem" />
+                  <img
+                     src="Images/delta_dental.png"
+                     alt="Logo de seguro Delta Dental"
+                     role="listitem" />
+                  <img
+                     src="Images/guardian.png"
+                     alt="Logo de seguro Guardian"
+                     role="listitem" />
+                  <img
+                     src="Images/metlife.png"
+                     alt="Logo de seguro MetLife"
+                     role="listitem" />
+                  <img
+                     src="Images/united_healthcare.png"
+                     alt="Logo de seguro United Healthcare"
+                     role="listitem" />
+               </div>
+               <p>
+                  Además aceptamos algunos planes PPO (Organización de
+                  Proveedores Preferidos)
+               </p>
+               <div class="insurance-images">
+                  <img src="Images/ppo.png" alt="Logo genérico de planes PPO" />
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-- Back to Top Button -->
+      <button
+         class="btn btn-primary back-to-top"
+         aria-label="Volver al inicio de la página">
+         &#8679; <span class="sr-only">Ir al</span> INICIO
+      </button>
+
+      <!-- Footer -->
+      <footer role="contentinfo">
+         <div>
+            <p>
+               <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+               <a
+                  href="https://www.google.com/maps?q=120+East+56th+St,+New+York,+NY+10022"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver dirección en Google Maps">
+                  120 East 56th St Suite 730, New York, NY, 10022
+               </a>
+            </p>
+            <p>
+               <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+               <strong>Teléfono:</strong>
+               <a href="tel:+12123085577">(212) 308-5577</a>
+               <span class="secondary-phone">
+                  <a href="tel:+12128891313">(212) 889-1313</a>
+               </span>
+               <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+               <strong>Email:</strong>
+               <a
+                  href="mailto:info@quick-bleach.com"
+                  aria-label="Enviar email a info@quick-bleach.com">
+                  info@quick-bleach.com
+               </a>
+            </p>
+         </div>
+         <div class="text-center p-2">
+            <i class="bi bi-c-circle" aria-hidden="true"></i>
+            2024 Dr. Souto's Dental Office | Todos los Derechos Reservados
+         </div>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+      <script>
+         // Initialize AOS
+         AOS.init({
+            duration: 1000,
+            once: true,
+         });
+
+         // Navigation functionality
+         document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll(".navbar .nav-link");
+            const navbarCollapse = document.querySelector(".navbar-collapse");
+
+            navLinks.forEach((link) => {
+               link.addEventListener("click", (e) => {
+                  e.preventDefault();
+                  const targetId = link.getAttribute("href").slice(1);
+                  const targetElement = document.getElementById(targetId);
+
+                  if (targetElement) {
+                     targetElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                     });
+                  }
+
+                  // Close navbar if expanded
+                  if (navbarCollapse.classList.contains("show")) {
+                     const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: true,
+                     });
+                     bsCollapse.hide();
+                  }
+               });
+            });
+
+            // Gallery animation pause on hover
+            const gallery = document.querySelector(".gallery");
+            if (gallery) {
+               let isHovered = false;
+               gallery.addEventListener("mouseenter", () => {
+                  isHovered = true;
+                  gallery.style.animationPlayState = "paused";
+               });
+               gallery.addEventListener("mouseleave", () => {
+                  isHovered = false;
+                  gallery.style.animationPlayState = "running";
+               });
+            }
+
+            // Highlight active link as you scroll
+            const sections = document.querySelectorAll("section");
+
+            function highlightActiveLink() {
+               let currentSection = "";
+               sections.forEach((section) => {
+                  const sectionTop = section.offsetTop;
+                  if (pageYOffset >= sectionTop - 100) {
+                     currentSection = section.getAttribute("id");
+                  }
+               });
+
+               navLinks.forEach((link) => {
+                  link.classList.remove("active");
+                  if (link.getAttribute("href") === `#${currentSection}`) {
+                     link.classList.add("active");
+                  }
+               });
+            }
+
+            document.addEventListener("scroll", highlightActiveLink);
+
+            // Back to Top button functionality
+            const backToTopButton = document.querySelector(".back-to-top");
+
+            function toggleBackToTop() {
+               if (window.scrollY > 300) {
+                  backToTopButton.style.display = "block";
+               } else {
+                  backToTopButton.style.display = "none";
+               }
+            }
+
+            window.addEventListener("scroll", toggleBackToTop);
+
+            backToTopButton.addEventListener("click", () => {
+               window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+
+            // Navbar hide/show on scroll
+            let lastScrollTop = 0;
+            const navbar = document.querySelector(".navbar");
+
+            function handleNavbarScroll() {
+               const scrollTop =
+                  window.pageYOffset || document.documentElement.scrollTop;
+               if (scrollTop > lastScrollTop && scrollTop > 100) {
+                  // Scrolling down
+                  navbar.classList.remove("navbar-visible");
+                  navbar.classList.add("navbar-hidden");
+               } else {
+                  // Scrolling up
+                  navbar.classList.remove("navbar-hidden");
+                  navbar.classList.add("navbar-visible");
+               }
+               lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            }
+
+            window.addEventListener("scroll", handleNavbarScroll);
+         });
+      </script>
+   </body>
+</html>
